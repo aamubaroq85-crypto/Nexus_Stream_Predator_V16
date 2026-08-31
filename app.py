@@ -140,7 +140,7 @@ st.markdown(f"""
         <div class="metric-title">BALANCE AWAL</div>
         <div class="metric-value-white">${st.session_state.balance:,.2f}</div>
     </div>
-    ""`, unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
 # Kartu 4: Drawdown Saat Ini
 st.markdown(f"""
@@ -150,10 +150,9 @@ st.markdown(f"""
     </div>
     """, unsafe_allow_html=True)
 
-# Tombol Aksi Siklus Predator / Darurat
+# Tombol Aksi Sinkronisasi
 if st.button("Jalankan Sinkronisasi P/L Real-time"):
     st.session_state.equity += 15.50
     st.session_state.floating_pl += 15.50
     st.session_state.drawdown = max(0.0, st.session_state.drawdown - 0.02)
     st.rerun()
-

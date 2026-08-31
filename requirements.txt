@@ -1,1 +1,3 @@
-streamlit\npandas\nnumpy\n
+streamlit
+pandas
+numpy
